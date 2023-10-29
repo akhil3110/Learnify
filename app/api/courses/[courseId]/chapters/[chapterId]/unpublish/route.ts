@@ -36,16 +36,15 @@ export async function PATCH(
             }
         })
 
-        const onlyUnPublishedChapter = await db.chapter.findMany({
+        const publishedChapterInCourse = await db.chapter.findMany({
             where:{
-                id: params.chapterId,
                 courseId: params.courseId,
                 isPublished: false
             }
         
         })
 
-        if(!onlyUnPublishedChapter.length){
+        if(!publishedChapterInCourse.length){
             await db.course.update({
                 where:{
                     id: params.courseId

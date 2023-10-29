@@ -17,6 +17,8 @@ import CategoryForm from "./_components/category-form";
 import PriceForm from "./_components/price-form";
 import AttachmentForm from "./_components/attachments-form";
 import ChaptersForm from "./_components/chapters-form";
+import Banner from "@/components/banner";
+import Actions from "./_components/action";
 
 const CourseIdPage = async ({
   params,
@@ -75,7 +77,15 @@ const CourseIdPage = async ({
 
   const completionText = `(${completedFields}/${totalFields})`;
 
+  const isComplete = requiredFields.every(Boolean);
+
   return (
+    <>
+    {!course.isPublished && (
+      <Banner 
+        label="This course is not published yet. It will not be visible to students until you publish it."
+      />
+    )}
     <div className="p-6">
       <div className="flex item-center justify-between">
         <div className="flex flex-col gap-y-2">
@@ -83,7 +93,12 @@ const CourseIdPage = async ({
           <span className="text-sm text-slate-700">
             Complete All Fields {completionText}
           </span>
-        </div>
+        </div> 
+        <Actions 
+          courseId={params.courseId}
+          isPublished={course.isPublished}
+          disabled={!isComplete}
+        />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-16">
         <div>
@@ -129,6 +144,7 @@ const CourseIdPage = async ({
         </div>
       </div>
     </div>
+    </>
   );
 };
 
