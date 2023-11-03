@@ -48,4 +48,13 @@ A list of technologies used within the project:
 * Postgress SQL
 * axios
 * Stripe (payment Integeration)
+<<<<<<< HEAD
 * Zod
+=======
+* Zod
+  
+  
+
+
+
+>>>>>>> f403d691859c982f00a3dd671ebb4bc4bd9f0d17
