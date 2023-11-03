@@ -2,9 +2,10 @@
 ### About the Project
 This is a learning managment system where user can create or learn from the courses Available.
 
-Here a user have 2 role 
-Teacher: Where a user can create a course and upload wthe vidoes for respective courses.
-Student: Where a user an enroll the courses by paying the fees if it is not free and can watch the videos.
+***
+Here a user have 2 role:
+*Teacher: Where a user can create a course and upload wthe vidoes for respective courses.
+*Student: Where a user an enroll the courses by paying the fees if it is not free and can watch the videos.
 
 Technologies Used
 
