@@ -1,5 +1,5 @@
 # Learnify
-### About the Project
+### About the Project:
 This is a learning managment system where user can create or learn from the courses Available.
 
 ***
@@ -37,7 +37,6 @@ bun dev
 ```
 
 ## Technologies Used
-***
 A list of technologies used within the project:
 * Next.js
 * Shacdcn (Frontend Component Library)
