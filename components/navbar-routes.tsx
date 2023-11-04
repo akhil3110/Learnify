@@ -35,8 +35,8 @@ const NavbarRoutes = () => {
                     </Button>
                 </Link>
             ):(
-                <Link href="/teacher/courses" className="mr-1">
-                    <Button size="sm" variant="ghost">
+                <Link href="/teacher/courses" className="mr-3">
+                    <Button size="sm" variant="default" className="bg-red-800 hover:bg-red-500">
                         Teacher Mode
                     </Button>
                 </Link>
